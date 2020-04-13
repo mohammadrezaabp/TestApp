@@ -16,7 +16,9 @@ namespace TestApp.Data
             : base(options)
         {
         }
-
+        public DbSet<LeaveAllocation> LeaveAllocation { get; set; }
+        public DbSet<LeaveHistory> LeaveHistorie { get; set; }
+        public DbSet<LeaveType> LeaveType { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
@@ -62,6 +64,7 @@ namespace TestApp.Data
                     .HasForeignKey(rc => rc.RoleId)
                     .IsRequired();
             });
+            
         }
     }
 }
