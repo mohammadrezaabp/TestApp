@@ -29,6 +29,8 @@ namespace TestApp.Data
                     .HasForeignKey(uc => uc.UserId)
                     .IsRequired();
 
+
+
                 // Each User can have many UserLogins
                 b.HasMany(e => e.Logins)
                     .WithOne(e => e.User)
