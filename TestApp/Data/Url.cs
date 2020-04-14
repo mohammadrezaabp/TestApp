@@ -6,12 +6,13 @@ using System.Threading.Tasks;
 
 namespace TestApp.Data
 {
-    public class LeaveType
+    public class Url
     {
         [Key]
         public int Id { get; set; }
-        [Required]
-        public string Name { get; set; }
-        public DateTime DateCreated { get; set; }
+        public string SiteUrl { get; set; }
+        public string ShortenedUrl { get; set; }
+        public int Count { get; set; }
+        
     }
 }

@@ -32,7 +32,7 @@ namespace TestApp
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
-            services.AddScoped<ILeaveTypeRepository, LeaveTypeRepository>();
+            services.AddScoped<IUrlRepository, UrlRepository>();
             services.AddScoped<ILeaveHistoryRepository, LeaveHistoryRepository>();
             services.AddScoped<ILeaveAllocationRepository, LeaveAllocationRepository>();
             services.AddIdentity<ApplicationUser, ApplicationRole>()

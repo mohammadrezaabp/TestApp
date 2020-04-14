@@ -6,7 +6,8 @@ using TestApp.Data;
 
 namespace TestApp.Contracts
 {
-    public interface ILeaveHistoryRepository : IRepositoryBase<LeaveHistory>
+    public interface IUrlRepository : IRepositoryBase<Url>
     {
+        ICollection<Url> GetUrlByCode(string code);
     }
 }

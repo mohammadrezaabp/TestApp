@@ -16,9 +16,7 @@ namespace TestApp.Data
             : base(options)
         {
         }
-        public DbSet<LeaveAllocation> LeaveAllocation { get; set; }
-        public DbSet<LeaveHistory> LeaveHistorie { get; set; }
-        public DbSet<LeaveType> LeaveType { get; set; }
+        public DbSet<Url> Urls { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
