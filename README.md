@@ -1,4 +1,4 @@
-# leaveManagementApp
+# TestApp
 
 Hi.
 In this project I have built a basic leave management app using asp.net core 3.1.
